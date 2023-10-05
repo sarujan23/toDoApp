@@ -10,6 +10,7 @@
     border: 1px solid #D0D5DD;
     border-radius: 8px;
     padding-top: 10px;
+    padding-right: 00px;
 }
 
 .list-group-item {
@@ -19,6 +20,8 @@
     display: flex;
     border-style: none;
     border-bottom-style: solid;
+    border-color: #c3c7c6;
+    
 }
 
 .todo-text {
@@ -38,6 +41,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-right: 00px;
+    
 }
 
 .heading{
@@ -52,6 +57,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    
 }
 
 
@@ -68,6 +74,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+    
 }
 .label.InProcess{
     width: 67px;
@@ -81,7 +88,8 @@
     color: #F2C94C;
     flex: none;
     order: 1;
-    flex-grow: 0;   
+    flex-grow: 0;  
+     
     
 }
 
@@ -105,6 +113,7 @@
     flex-grow: 0;
     padding-top: 17px;
     font-size: 14px;
+    
 }
 
 .status.InProcess {
@@ -120,10 +129,11 @@
     left: 480px;
     top: 20px;   
     color: #F2C94C;
-    background-color: rgba(242, 201, 76, 0.1);
+    background-color: rgba(25, 25, 24, 0.1);
     border-radius: 16px;
     padding-top: 17px;
     font-size: 14px;
+    
 }
 
 .btn{
@@ -169,6 +179,9 @@
     align-items: center;
     text-align: right;
     color: #757575;
+    
+    
+    
 }
 
 .pagination-container{
@@ -180,6 +193,7 @@
     top: 824px;
     padding-left: 165px;
     padding-top: 10px;
+    
 }
 
 .pagination-container .pagination li:first-child a,
@@ -189,6 +203,7 @@
   padding: 8px 12px;
   border-radius: 4px;
   margin: 0 5px;
+  
 }
 
 /* Style the page numbers */
@@ -199,6 +214,7 @@
   border-radius: 4px;
   margin: 0 5px;
   text-decoration: none;
+  
 }
 
 /* Style the active page number */
@@ -218,195 +234,3 @@
 
   
 
-/* given styling */
-
-/* .container{
-    position: absolute;
-    width: 656px;
-    height: 632px;
-    left: 296px;
-    top: 248px;
-    background-color:burlywood;
-} */
-
-/* .header{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: Fixed (656px);
-    height: Hug (36px);
-    top: 248px;
-    left: 296px;
-    padding: 12px, 0px, 0px, 0px;
-    gap: 16px;
-    background-color: brown;
-} */
-
-/* #headername{
-    width: 45px;
-    height: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-} */
-
-/* .frame67{
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 16px;
-    gap: 471px;
-    width: 656px;
-    height: 24px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-
-/* .frame65{    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    width: 45px;
-    height: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-} */
-
-/* .frame64{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    width: 45px;
-    height: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    } */
-
-    /* item4 */
-/* .item4{
-        position: absolute;
-        width: 656px;
-        height: 48px;
-        left: 296px;
-        top: 297px;
-        display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: brown;
-    } */
-
-/* .group1737{
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        left: 16px;
-        top: 14px;
-    } */
-
-/* .rectangle656{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 16px;
-    top: 14px;
-    background: #2F80ED;
-    border-radius: 4px;
-} */
-
-/* .cellbadge{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 8px;
-    gap: 6px;
-    position: absolute;
-    width: 47px;
-    height: 26px;
-    left: 540px;
-    top: 11px;
-    background: #E8F5E9;
-    border-radius: 16px;
-} */
-
-/* .label{
-    width: 31px;
-    height: 22px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 22px;
-    text-align: center;
-    color: #219653;
-    flex: none;
-    order: 1;
-} */
-/* 
-.bell{
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    left: 20px;
-    top: 18px;
-} */
-
-/* #bellring{
-    position: absolute;
-    left: 10.61%;
-    right: 10.61%;
-    top: 8.33%;
-    bottom: 8.33%;
-    border: 1px solid #E8F5E9;
-} */
-
-/* .totalgroceries{
-    position: absolute;
-    left: 91.62%;
-    right: 2.44%;
-    top: 27.08%;
-    bottom: 27.08%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: right;    
-    color: #757575;
-} */
-
-/* .todolist{
-    position: absolute;
-    width: 301px;
-    left: 44px;
-    top: 25%;
-    bottom: 25%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-} */
