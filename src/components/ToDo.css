@@ -9,6 +9,7 @@
     padding: 20px;
     border: 1px solid #D0D5DD;
     border-radius: 8px;
+    padding-top: 10px;
 }
 
 .list-group-item {
@@ -81,6 +82,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;   
+    
 }
 
 .status.Done {
@@ -101,6 +103,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    padding-top: 17px;
+    font-size: 14px;
 }
 
 .status.InProcess {
@@ -118,6 +122,8 @@
     color: #F2C94C;
     background-color: rgba(242, 201, 76, 0.1);
     border-radius: 16px;
+    padding-top: 17px;
+    font-size: 14px;
 }
 
 .btn{
@@ -172,6 +178,8 @@
     height:10px;
     left: 520px;
     top: 824px;
+    padding-left: 165px;
+    padding-top: 10px;
 }
 
 .pagination-container .pagination li:first-child a,
