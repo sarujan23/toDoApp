@@ -234,16 +234,17 @@
 /* pie chart */
 .chart-container{
     position: absolute;
-width: 440px;
+width: 585px;
 height: 295px;
 left: 976px;
 top: 580px;
 border: 1px solid #D0D5DD;
 border-radius: 8px;
+margin-left: 275px;
 }
 
 .container-header{
-    width: 440px;
+    width: 585px;
     height: 57px;
     left: 976px;
     top: 627px;
@@ -279,17 +280,19 @@ border-radius: 8px;
     height: 148px;
     left: 1071px;
     top: 708px;
+    margin-top: -20px;
 }
 
 .pie-chart{
-    width: 148px;
-    height: 148px;
+    width: 178px;
+    height: 178px;
     left: 1071px;
     top: 708px;
+    
 }
 
 .legend{
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: -90px;
 }
 
