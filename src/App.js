@@ -3,6 +3,7 @@ import ToDo from './components/ToDo'
 import SideBar from './components/SideBar'
 import NavBar from './components/NavBar';
 import ActivityFeed from './components/ActivityFeed';
+
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,8 @@ function App() {
       <SideBar/>
       <NavBar/>
       <ActivityFeed/>
+      
+      
     </div>
   );
 }

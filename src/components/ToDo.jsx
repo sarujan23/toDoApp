@@ -2,6 +2,9 @@ import React , {useEffect, useState} from 'react'
 import axios from 'axios'
 import './ToDo.css'
 import Pagination from 'react-js-pagination';
+import { Doughnut } from 'react-chartjs-2';
+import {Chart, ArcElement} from 'chart.js'
+Chart.register(ArcElement);
 
 
 function formatDate(createdAt) {
@@ -10,9 +13,33 @@ function formatDate(createdAt) {
     return date.toLocaleDateString('en-GB',options);
   }
 
+  const priorityColors = {
+    "HIGH": 'red',
+    "MEDIUM": 'yellow',
+    "LOW": 'blue',
+  };
+
 const ToDo = () => {
 
     const[list, setList] = useState([]);
+     
+    const taskCountsByPriority = {
+        HIGH: list.filter((item) => item.priority === 'HIGH').length,
+        MEDIUM: list.filter((item) => item.priority === 'MEDIUM').length,
+        LOW: list.filter((item) => item.priority === 'LOW').length,
+      };
+    
+      // Create data for the Pie chart
+      const pieChartData = {
+        labels: ['HIGH', 'MEDIUM', 'LOW'],
+        datasets: [
+          {
+            data: [taskCountsByPriority.HIGH, taskCountsByPriority.MEDIUM, taskCountsByPriority.LOW],
+            backgroundColor: ['red', 'yellow', 'blue'],
+          },
+        ],
+      };
+    
 
     // status change button
     const handleMarkAsDone = (id) => {
@@ -99,6 +126,31 @@ const ToDo = () => {
                     />
                 </div>
         </div>
+
+        <div className="chart-container">
+            <div className="container-header">
+                <p id="chartheading">Task Priorities</p>
+            </div>
+            <div className="group1769">
+                <div className='group1768'>
+                    <div className="pie-chart">
+                        <Doughnut data={pieChartData} />                  
+                    </div>
+                </div>
+                <div className='legend'>
+                    <ul className='legendhigh'>
+                        <li id="high"><span>High</span></li>
+                    </ul>
+                    <ul className='legendmedium'>
+                        <li id="high"><span>Medium</span></li>
+                    </ul>
+                    <ul className='legendlow'>
+                        <li id="high"><span>Low</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
       
   )

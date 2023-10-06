@@ -231,6 +231,89 @@
   cursor: pointer;
 }
 
+/* pie chart */
+.chart-container{
+    position: absolute;
+width: 440px;
+height: 295px;
+left: 976px;
+top: 580px;
+border: 1px solid #D0D5DD;
+border-radius: 8px;
+}
 
-  
+.container-header{
+    width: 440px;
+    height: 57px;
+    left: 976px;
+    top: 627px;
+    border-bottom: 1px solid #D0D5DD;
 
+}
+
+#chartheading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 10px 0px;
+    gap: 16px;
+    width: 436px;
+    height: 54px;
+    left: 976px;
+    top: 627px;
+    font-weight: 600;
+}
+
+.group1769{
+    width: 249.5px;
+    height: 148px;
+    left: 1071px;
+    top: 708px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.group1768{
+    width: 148px;
+    height: 148px;
+    left: 1071px;
+    top: 708px;
+}
+
+.pie-chart{
+    width: 148px;
+    height: 148px;
+    left: 1071px;
+    top: 708px;
+}
+
+.legend{
+    margin-left: 150px;
+    margin-top: -90px;
+}
+
+.legendhigh{
+    color:red;
+    display: flex;
+    line-height: 0.1em;
+}
+.legendhigh span{
+    color: #000000;
+}  
+.legendmedium{
+    color:yellow;
+    display: flex;
+    line-height: 0.1em;
+}
+.legendmedium span{
+    color: #000000;
+} 
+.legendlow{
+    color:blue;
+    display: flex;
+    line-height: 0.1em;
+}
+.legendlow span{
+    color: #000000;
+}  
